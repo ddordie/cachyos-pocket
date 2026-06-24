@@ -33,4 +33,9 @@ For x86 handhelds, CachyOS Handheld Edition provides a polished gaming experienc
 
 ## Status
 
-🧊 Early exploration. No active development yet.
+🚧 Phase 1: Kernel (BORE scheduler + 1000Hz tick)
+- [x] BORE scheduler patch imported from CachyOS kernel-patches (7.0)
+- [x] Config fragment: `CONFIG_SCHED_BORE=y`, `HZ=1000`
+- [x] `scripts/apply.sh` — overlays onto distribution checkout
+- [ ] Build & flash to device
+- [ ] 8-item hardware smoke test
